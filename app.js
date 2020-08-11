@@ -10,16 +10,16 @@ const app = express();
 
 console.log(process.env.JWT_KEY);
 
-mongoose
-  .connect(
-    "mongodb+srv://max:" + process.env.MONGO_ATLAS_PW + "@clustertest-vy4wh.mongodb.net/test"
-  )
-  .then(() => {
-    console.log("Connected to database!");
-  })
-  .catch(() => {
-    console.log("Connection failed!");
-  });
+// mongoose
+//   .connect(
+//     "mongodb+srv://max:" + process.env.MONGO_ATLAS_PW + "@clustertest-vy4wh.mongodb.net/test"
+//   )
+//   .then(() => {
+//     console.log("Connected to database!");
+//   })
+//   .catch(() => {
+//     console.log("Connection failed!");
+//   });
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: false }));
