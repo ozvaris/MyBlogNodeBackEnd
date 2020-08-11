@@ -8,6 +8,8 @@ const userRoutes = require("./routes/user");
 
 const app = express();
 
+console.log(process.env.JWT_KEY);
+
 mongoose
   .connect(
     "mongodb+srv://max:" + process.env.MONGO_ATLAS_PW + "@clustertest-vy4wh.mongodb.net/test"
